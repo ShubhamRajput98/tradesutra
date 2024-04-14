@@ -1,0 +1,42 @@
+.dropdown-menu.open {
+  max-height: 300px;
+  transition: max-height 0.3s;
+}
+
+.dropdown-menu.close {
+  min-width: max-content;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s;
+}
+
+.close ul li {
+  transform: rotateX(90deg);
+  transform-origin: top;
+  transition: all 0.3s linear;
+}
+
+.open ul li {
+  transform: rotateX(0);
+  transform-origin: bottom;
+  transition: all 0.3s linear;
+}
+
+.active {
+  background: rgba(160, 166, 192, 0.17);
+  color: #fff;
+}
+
+.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background: #fff;
+}
+
+.dashboard.active::before {
+  display: none;
+}

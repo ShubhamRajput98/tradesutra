@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* For Webkit-based browsers (Chrome, Safari and Opera) */
+.scrollBox::-webkit-scrollbar {
+  display: none;
+}
+
+/* For IE, Edge and Firefox */
+.scrollBox {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.scrollBar-sm::-webkit-scrollbar {
+  width: 11px;
+}
+
+.scrollBar-sm::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG);
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+
+.cLZJJm,
+.eAJFcT {
+  background: #F4F6F9 !important;
+  /* Change this color to your desired highlight color */
+}
+
+.cLZJJm .rdt_TableCell>input[type=checkbox],
+.eAJFcT .rdt_TableCell>input[type=checkbox],
+input[name=select-all-rows],
+input[type=checkbox] {
+  accent-color: #435085;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
